@@ -1,0 +1,107 @@
+body { 
+  background: #000000;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+.bucle {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 600px;
+  height: 700px;
+  overflow: hidden;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+.mtn {
+  position: absolute;
+  background-image: url("mtn.jpg");
+  right: -900px;
+  bottom: -20px;
+  width: 1500px;
+  height: 650px;
+  animation: mtn 10s linear infinite;
+}
+
+.mtn1 {
+  position: absolute;
+  background-image: url("mtn.jpg");
+  right: 600px;
+  bottom: -20px;
+  width: 1500px;
+  height: 700px;
+  animation: mtn 10s linear infinite;
+}
+
+.poli{
+  position: absolute;
+  margin-top: 640px;
+  width: 160px;
+  height: 300;
+}
+
+.roca {
+  margin-top: -17%;
+  height: 2%; 
+  width: 2%;
+  bottom: -2px;
+  border-radius: 20px;
+  position: absolute;
+  background: rgb(136, 136, 136);
+}
+
+.coche {
+  position: absolute;
+  margin-top: 620px;
+  width: 163px;
+  height: 300;
+  margin-left: 300px;
+  
+}
+
+
+
+.roca  { 
+  animation: roca 4s   -0.530s linear infinite; 
+}
+
+
+
+
+
+
+@keyframes roca {
+  0%   { right: -200px; }
+  100% { right: 2000px; }
+}
+
+
+@keyframes mtn {
+  
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -1300px;
+  }
+}
+
+@keyframes mtn1 {
+  
+  from {
+    background-position: 1300px;
+  }
+  to {
+    background-position: 0px;
+  }
+}
+
+/*
+@keyframes mtn {
+  100% {
+    transform: translateX(-2000px);
+    
+  }
+}
+
+
